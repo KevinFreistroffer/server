@@ -5,6 +5,8 @@ from .models import Item, ItemCreate
 
 router = APIRouter()
 
+
+
 @router.get("/items", response_model=Dict[str, List[Item]])
 async def get_items():
     """Get all items"""
